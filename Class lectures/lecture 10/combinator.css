@@ -1,0 +1,31 @@
+/* descendant combinator */
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: purple;
+}
+
+/* general sibling combinator selector: */
+
+div~p{
+    color: green;
+    font-size: 30px;
+}
+/* Child combinator selector: */
+
+ol > li{
+    background-color: yellow;
+    color: red;
+    width: 110px;
+    padding:20px;
+    font-size: 20px;
+}
+
+/* Adjancent Combinator selector: */
+
+h2+p{
+    border-top: 2px solid blue;
+    color: blue;
+    font-size: 19px;
+}
+
