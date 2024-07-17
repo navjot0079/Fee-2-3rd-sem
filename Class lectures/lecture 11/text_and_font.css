@@ -1,0 +1,32 @@
+/* text align */
+h1{
+    text-align: center;
+}
+
+.a1{
+    text-align: inherit;
+    /* text-align: start;
+    text-align: end;
+    text-align: left;
+    text-align: right;
+    text-align: center; */
+}
+p{
+    text-align: justify;
+}
+
+/*Text Decoration*/
+a{
+    font-size: 30px;
+    /*text-decoration: underline; */
+    text-decoration: line-through;
+    color: red;
+    text-decoration-color: rgb(255, 241, 86);
+    text-decoration-style: solid ;
+    /* text-decoration:overline ;
+    text-decoration: none; */
+}
+h2{
+    text-shadow: 10px 18px 2px grey;
+   /* color: transparent;*/
+}
