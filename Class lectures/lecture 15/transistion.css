@@ -1,0 +1,47 @@
+.object{
+    width: 200px;
+    height: 200px;
+    border: 2px solid palevioletred;
+    background-color: pink;
+    transition-duration: 5s;
+    transition-delay: 2s ;
+    
+}
+.object:hover{
+    border-radius: 50%;
+
+    background-color: aqua;
+}
+article{
+    margin: 20px auto;
+    border:2px solid rgb(3, 245, 108);
+    background-color: aquamarine;
+}
+article div{
+    margin: 10px;
+    padding: 20px 20px;
+    border:2px solid rgb(166, 175, 0);
+    width: 1px;
+    background-color: yellow;
+    transition: 2s;
+}
+
+div:nth-of-type(1){
+    transition-timing-function: linear;
+}
+div:nth-of-type(2){
+    transition-timing-function: ease;
+}
+div:nth-of-type(3){
+    transition-timing-function: ease-in;
+}
+div:nth-of-type(4){
+    transition-timing-function: ease-out;
+}
+div:nth-of-type(5){
+    transition-timing-function: ease-in-out;
+}
+article:hover div{
+    margin-left: 900px;
+    
+}
