@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h1 style="padding-left: 40px;">Amazing Photos</h1>
+    <div  >
+        <ul id="images">
+            <li><img id="normal" src="http://upload.wikimedia.org/wikipedia/commons/6/62/Peacock_Wooing_Peahen.jpg" alt="" width="250px" height="200px"></li>
+            <li><img id="white" src="https://3.bp.blogspot.com/-08UebwaZqT0/Ub7Cr8spSTI/AAAAAAAADQ0/BZ30qeh98GU/s1600/White-Peacock.jpg" width="250px" height="200px" alt=""></li>
+            <li><img id="colored" src="https://i.ytimg.com/vi/VvskprWeoi0/maxresdefault.jpg" alt="" width="250px" height="200px"></li>
+            <li><img id="red" src="https://wallpapercave.com/wp/wp3409366.jpg" alt="" width="250px" height="200px"></li>
+            <li><a style="color: aliceblue;" href="www.google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("clicked inside ul");
+    // },false);
+
+    // document.getElementById('normal').addEventListener('click',function(e){
+    //     console.log("peacock shout");
+    //     e.stopPropagation(); // this helps to prevent bubbling.
+    // },false);
+    // if false then prints bottom to top(bubbling), else then prints top to bottom (capturing)
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log("google baba");
+        
+    // },false);
+    
+    //removing images
+    document.querySelector('#images').addEventListener('click',function(e){
+        if(e.target.tagName==='IMG'){
+            console.log(e.target.id);
+            let removeit = e.target.parentNode;
+        removeit.remove();
+        
+        }
+        
+        //removeit.parentNode.remove(ChildNode);
+    },false);
+</script>
+</html>

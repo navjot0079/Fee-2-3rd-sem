@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+   
+</head>
+<body>
+    <h1 id="heading">DOM selector</h1>
+    <img src="gojo.png" width="300px" height="350px">
+    <p>gojo Satoru</p>
+
+    <h2 class="items"> Super hero</h2>
+    <ul class="work">
+        <li>Ichigo</li>
+        <li>Luffy</li>
+        <li>Gojo</li>
+    </ul>
+    <ul class="book"></ul>
+        <li>Ichigo</li>
+        <li>Luffy</li>
+        <li>Gojo</li>
+    </ul>
+</body>
+<script >
+    // 1. getElementbyId: Id selector
+
+var a = document.getElementById("heading");
+console.log(a);
+console.dir(a);
+
+a.style.color="white";
+a.style.background="blue";
+a.style.border="5px solid purple";
+a.stye.padding="20px";
+
+// 2.getElementbyClassname: Class selector 
+var b=document.getElementsByClassName("items");
+console.log(b);
+
+b[0].style.background="green";
+for(let items of b){
+    items.style.color="red";
+    items.style.fontWeight="bold";
+}
+
+// 3. Tagname selector: getElementbyTagname
+// var c = document.getElementsByTagName("h2");
+// c[0].style.textDecoration = "line-through";
+// c[0].style.background= "yellow";
+
+// 4. queryselector
+var d = document.querySelector("book");
+console.log(d);
+
+d.style.color="blue";
+// 1. innertext aware about css styling and dont showcase hidden content
+// 2. textcontent not aware about css styling
+// 3. innerhtml give all html along with all text
+// getattribute setattribute
+
+</script>
+
+</html>
+
